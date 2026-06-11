@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './App.css';
 import Navbar from './components/Navbar';
 import HeroHeader from './components/HeroHeader';
 import AlbumCard from './components/AlbumCard';
@@ -6,24 +7,6 @@ import TrackRow from './components/TrackRow';
 import Player from './components/Player';
 import { usePlayer } from './hooks/usePlayer';
 import { albums, tracks } from './data/tracks';
-
-const sectionLabel = {
-  fontSize: '11px',
-  textTransform: 'uppercase',
-  letterSpacing: '0.12em',
-  color: '#8a6c48',
-  fontWeight: '500',
-  marginBottom: '1rem',
-  display: 'flex',
-  alignItems: 'center',
-  gap: '10px',
-};
-
-const divider = {
-  flex: 1,
-  height: '0.5px',
-  background: '#c9b89a',
-};
 
 export default function App() {
   const [page, setPage] = useState('Home');
@@ -33,26 +16,21 @@ export default function App() {
     tracks.filter((t) => t.album === albumTitle);
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <div className="app">
       <Navbar activePage={page} onNavigate={setPage} />
 
-      <main style={{ flex: 1 }}>
+      <main className="main">
         {page === 'Home' && (
           <>
             <HeroHeader onBrowse={() => setPage('Albums')} />
 
-            <div style={{ padding: '1.5rem 2rem', maxWidth: '960px', margin: '0 auto' }}>
-              <div style={sectionLabel}>
+            <div className="page-content">
+              <div className="section-label">
                 Albums
-                <div style={divider} />
+                <div className="section-divider" />
               </div>
 
-              <div style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fill, minmax(180px, 1fr))',
-                gap: '14px',
-                marginBottom: '2rem',
-              }}>
+              <div className="album-grid">
                 {albums.map((album) => (
                   <AlbumCard
                     key={album.id}
@@ -63,12 +41,12 @@ export default function App() {
                 ))}
               </div>
 
-              <div style={sectionLabel}>
+              <div className="section-label">
                 Latest — Dusk &amp; Timber
-                <div style={divider} />
+                <div className="section-divider" />
               </div>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+              <div className="track-list">
                 {tracksByAlbum('Dusk & Timber').map((track, i) => (
                   <TrackRow
                     key={track.id}
@@ -85,17 +63,13 @@ export default function App() {
         )}
 
         {page === 'Albums' && (
-          <div style={{ padding: '2rem', maxWidth: '960px', margin: '0 auto' }}>
-            <div style={sectionLabel}>
+          <div className="page-content">
+            <div className="section-label">
               All Albums
-              <div style={divider} />
+              <div className="section-divider" />
             </div>
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-              gap: '16px',
-              marginBottom: '2rem',
-            }}>
+
+            <div className="album-grid">
               {albums.map((album) => (
                 <AlbumCard
                   key={album.id}
@@ -107,12 +81,12 @@ export default function App() {
             </div>
 
             {albums.map((album) => (
-              <div key={album.id} style={{ marginBottom: '2rem' }}>
-                <div style={sectionLabel}>
+              <div key={album.id} className="album-section">
+                <div className="section-label">
                   {album.title} · {album.year}
-                  <div style={divider} />
+                  <div className="section-divider" />
                 </div>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                <div className="track-list">
                   {tracksByAlbum(album.title).map((track, i) => (
                     <TrackRow
                       key={track.id}
@@ -130,18 +104,14 @@ export default function App() {
         )}
 
         {page === 'About' && (
-          <div style={{ padding: '2rem', maxWidth: '640px', margin: '0 auto' }}>
-            <div style={sectionLabel}>
+          <div className="page-content--narrow">
+            <div className="section-label">
               About
-              <div style={divider} />
+              <div className="section-divider" />
             </div>
-            <p style={{
-              fontFamily: 'Georgia, serif',
-              fontSize: '16px',
-              lineHeight: '1.8',
-              color: '#4a3218',
-            }}>
-              Original music by MNTN James.
+            <p className="about-text">
+              Original music by James. Recorded in the mountains, written by the fire.
+              {' '}Replace this with your own bio and story.
             </p>
           </div>
         )}

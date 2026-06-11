@@ -1,95 +1,8 @@
-const s = {
-  bar: {
-    background: '#2c1f0e',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '1rem',
-    padding: '0 1.5rem',
-    height: '80px',
-    borderTop: '0.5px solid #4a3218',
-    position: 'sticky',
-    bottom: 0,
-    zIndex: 100,
-  },
-  nowPlaying: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '10px',
-    width: '200px',
-    flexShrink: 0,
-  },
-  thumb: {
-    width: '42px',
-    height: '42px',
-    borderRadius: '6px',
-    flexShrink: 0,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  controls: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '5px',
-  },
-  btnRow: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '16px',
-  },
-  btn: {
-    background: 'none',
-    border: 'none',
-    color: '#9e7d55',
-    cursor: 'pointer',
-    fontSize: '18px',
-    display: 'flex',
-    padding: 0,
-    lineHeight: 1,
-  },
-  playBtn: {
-    width: '36px',
-    height: '36px',
-    borderRadius: '50%',
-    background: '#c4a055',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    color: '#2c1f0e',
-    fontSize: '16px',
-    border: 'none',
-    cursor: 'pointer',
-  },
-  progress: {
-    width: '100%',
-    display: 'flex',
-    alignItems: 'center',
-    gap: '8px',
-  },
-  time: {
-    fontSize: '10px',
-    color: '#6b5038',
-    minWidth: '30px',
-  },
-  bar_: {
-    flex: 1,
-    height: '3px',
-    background: '#4a3218',
-    borderRadius: '2px',
-    cursor: 'pointer',
-    position: 'relative',
-  },
-};
-
 export default function Player({ track, isPlaying, progress, currentTime, onToggle, onSeek }) {
   if (!track) {
     return (
-      <div style={s.bar}>
-        <div style={{ color: '#6b5038', fontSize: '13px', fontFamily: 'Georgia, serif', fontStyle: 'italic' }}>
-          Select a track to play
-        </div>
+      <div className="player">
+        <span className="player__empty">Select a track to play</span>
       </div>
     );
   }
@@ -106,52 +19,48 @@ export default function Player({ track, isPlaying, progress, currentTime, onTogg
     return `${m}:${s}`;
   };
 
-  const elapsed = formatTime(currentTime);
-  const total = track.duration;
-
   return (
-    <div style={s.bar}>
-      <div style={s.nowPlaying}>
-        <div style={{ ...s.thumb, background: track.color }}>
-          <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '16px' }}>♪</span>
+    <div className="player">
+      <div className="player__now-playing">
+        <div className="player__thumb" style={{ background: track.color }}>
+          {track.coverArt ? (
+            <img src={track.coverArt} alt={track.title} />
+          ) : (
+            <span className="player__thumb-placeholder">♪</span>
+          )}
         </div>
         <div>
-          <div style={{ fontSize: '13px', color: '#f0e0c4', fontWeight: '500', fontFamily: 'Georgia, serif' }}>
-            {track.title}
-          </div>
-          <div style={{ fontSize: '11px', color: '#9e7d55' }}>{track.album}</div>
+          <div className="player__track-title">{track.title}</div>
+          <div className="player__track-album">{track.album}</div>
         </div>
       </div>
 
-      <div style={s.controls}>
-        <div style={s.btnRow}>
-          <button style={s.btn} aria-label="Previous">⏮</button>
+      <div className="player__controls">
+        <div className="player__btn-row">
+          <button className="player__btn" aria-label="Previous">⏮</button>
           <button
-            style={s.playBtn}
+            className="player__btn player__btn--play"
             onClick={() => onToggle(track)}
             aria-label={isPlaying ? 'Pause' : 'Play'}
           >
             {isPlaying ? '❙❙' : '▶'}
           </button>
-          <button style={s.btn} aria-label="Next">⏭</button>
+          <button className="player__btn" aria-label="Next">⏭</button>
         </div>
 
-        <div style={s.progress}>
-          <span style={s.time}>{elapsed}</span>
-          <div style={s.bar_} onClick={handleBarClick}>
-            <div style={{
-              height: '100%',
-              background: '#c4a055',
-              borderRadius: '2px',
-              width: `${Math.round(progress * 100)}%`,
-              pointerEvents: 'none',
-            }} />
+        <div className="player__progress">
+          <span className="player__time">{formatTime(currentTime)}</span>
+          <div className="player__progress-bar" onClick={handleBarClick}>
+            <div
+              className="player__progress-fill"
+              style={{ width: `${Math.round(progress * 100)}%` }}
+            />
           </div>
-          <span style={{ ...s.time, textAlign: 'right' }}>{total}</span>
+          <span className="player__time player__time--right">{track.duration}</span>
         </div>
       </div>
 
-      <div style={{ width: '100px', flexShrink: 0 }} />
+      <div className="player__spacer" />
     </div>
   );
 }

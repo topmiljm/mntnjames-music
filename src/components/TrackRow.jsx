@@ -1,84 +1,41 @@
 import { useState } from 'react';
 
 export default function TrackRow({ track, index, isPlaying, isActive, onToggle }) {
-  const [hovered, setHovered] = useState(false);
   const [liked, setLiked] = useState(false);
 
   return (
     <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '12px',
-        padding: '7px 8px',
-        borderRadius: '8px',
-        background: isActive ? '#e2d5c0' : hovered ? '#ede3d4' : 'transparent',
-        cursor: 'pointer',
-        transition: 'background 0.12s',
-      }}
+      className={`track-row${isActive ? ' active' : ''}`}
       onClick={() => onToggle(track)}
     >
-      <div style={{ width: '20px', textAlign: 'center', flexShrink: 0 }}>
-        {isActive && isPlaying ? (
-          <span style={{ fontSize: '13px', color: '#8c5a28' }}>▶</span>
-        ) : isActive ? (
-          <span style={{ fontSize: '13px', color: '#8c5a28' }}>❙❙</span>
+      <div className={`track-row__num${isActive ? ' track-row__num--playing' : ''}`}>
+        {isActive && isPlaying ? '▶' : isActive ? '❙❙' : index + 1}
+      </div>
+
+      <div className="track-row__thumb" style={{ background: track.color }}>
+        {track.coverArt ? (
+          <img src={track.coverArt} alt={track.title} />
         ) : (
-          <span style={{ fontSize: '12px', color: '#8a6c48' }}>{index + 1}</span>
+          <span className="track-row__thumb-placeholder">♪</span>
         )}
       </div>
 
-      <div
-        style={{
-          width: '36px',
-          height: '36px',
-          borderRadius: '6px',
-          background: track.color,
-          flexShrink: 0,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px' }}>♪</span>
-      </div>
-
-      <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{
-          fontSize: '14px',
-          color: isActive ? '#8c5a28' : '#2c1f0e',
-          fontWeight: isActive ? '500' : '400',
-          whiteSpace: 'nowrap',
-          overflow: 'hidden',
-          textOverflow: 'ellipsis',
-          fontFamily: 'Georgia, serif',
-        }}>
+      <div className="track-row__info">
+        <div className={`track-row__title${isActive ? ' track-row__title--active' : ''}`}>
           {track.title}
         </div>
-        <div style={{ fontSize: '12px', color: '#8a6c48' }}>{track.album}</div>
+        <div className="track-row__album">{track.album}</div>
       </div>
 
       <button
-        onClick={e => { e.stopPropagation(); setLiked(l => !l); }}
-        style={{
-          background: 'none',
-          border: 'none',
-          fontSize: '16px',
-          color: liked ? '#8c5a28' : '#b89a78',
-          flexShrink: 0,
-          cursor: 'pointer',
-          padding: '0 4px',
-        }}
+        className={`track-row__like${liked ? ' liked' : ''}`}
+        onClick={(e) => { e.stopPropagation(); setLiked((l) => !l); }}
         aria-label={liked ? 'Unlike' : 'Like'}
       >
         {liked ? '♥' : '♡'}
       </button>
 
-      <div style={{ fontSize: '13px', color: '#8a6c48', flexShrink: 0 }}>
-        {track.duration}
-      </div>
+      <div className="track-row__duration">{track.duration}</div>
     </div>
   );
 }
