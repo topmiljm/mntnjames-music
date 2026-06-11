@@ -19,13 +19,17 @@
 /* =====================
    Global
    ===================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
 }
 
@@ -106,7 +110,12 @@ button {
    Hero Header
    ===================== */
 .hero {
-  background: #b0aaa2;
+  background-image: linear-gradient(5deg,
+      #b0aaa2,
+      rgb(57, 108, 57),
+      rgb(123, 62, 62),
+      #c4a055,
+      rgb(54, 52, 52));
   width: 100%;
   overflow: hidden;
 }
