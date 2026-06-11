@@ -8,10 +8,10 @@ export const albums = [
   },
   {
     id: 2,
-    title: 'Elk Demos',
+    title: 'Ram Demos',
     year: 2023,
     color: '#3b5e3a',
-    coverArt: '/images/elk demos artwork-1.png'
+    coverArt: '/images/ram demos artwork-1.png'
   },
 ];
 
