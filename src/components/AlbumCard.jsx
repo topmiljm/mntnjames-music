@@ -1,7 +1,7 @@
 export default function AlbumCard({ album, trackCount, onClick }) {
   return (
     <div className="album-card" onClick={onClick}>
-      <div className="album-card__art" style={{ background: album.color }}>
+      <div className="album-card__art">
         {album.coverArt ? (
           <img src={album.coverArt} alt={album.title} />
         ) : (
