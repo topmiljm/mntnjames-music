@@ -149,6 +149,11 @@ button {
   letter-spacing: 0.08em;
 }
 
+.hero-title-img {
+height: 3.5rem;
+background-color: white;
+}
+
 .hero-subtitle {
   font-size: 11px;
   color: var(--text-faint);

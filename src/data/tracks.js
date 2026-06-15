@@ -2,7 +2,7 @@ export const albums = [
   {
     id: 1,
     title: 'Bear Demos',
-    year: 2024,
+    year: 2025,
     color: '#7c4e2a',
     coverArt: '/images/bear demos artwork-1.png'
   },
@@ -12,6 +12,13 @@ export const albums = [
     year: 2023,
     color: '#3b5e3a',
     coverArt: '/images/ram demos artwork-1.png'
+  },
+  {
+    id: 3,
+    title: 'Moose Demos',
+    year: 2022,
+    color: '#3b5e3a',
+    coverArt: '/images/moose demos artwork-2.png'
   },
 ];
 

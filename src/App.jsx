@@ -22,11 +22,11 @@ export default function App() {
       <main className="main">
         {page === 'Home' && (
           <>
-            <HeroHeader onBrowse={() => setPage('Albums')} />
+            <HeroHeader onBrowse={() => setPage('Demos')} />
 
             <div className="page-content">
               <div className="section-label">
-                Albums
+                Demos
                 <div className="section-divider" />
               </div>
 
@@ -36,7 +36,7 @@ export default function App() {
                     key={album.id}
                     album={album}
                     trackCount={tracksByAlbum(album.title).length}
-                    onClick={() => setPage('Albums')}
+                    onClick={() => setPage('Demos')}
                   />
                 ))}
               </div>
@@ -62,10 +62,10 @@ export default function App() {
           </>
         )}
 
-        {page === 'Albums' && (
+        {page === 'Demos' && (
           <div className="page-content">
             <div className="section-label">
-              All Albums
+              All Demos
               <div className="section-divider" />
             </div>
 

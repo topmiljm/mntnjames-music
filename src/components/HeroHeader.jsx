@@ -7,12 +7,17 @@ export default function HeroHeader({ onBrowse }) {
         className="hero-img"
       />
       <div className="hero-overlay">
-        <h1 className="hero-title">MNTN James</h1>
-        <p className="hero-subtitle">Original Works &nbsp;·&nbsp; Stream &amp; Listen</p>
+        <h1 className="hero-title">MNTN James
+          <img className="hero-title-img"
+            src="/images/mntn-peak.jpg">
+          </img>
+        </h1>
+        <p className="hero-subtitle">Original Demos &nbsp;·&nbsp; Stream &amp; Listen</p>
         <button className="hero-btn" onClick={onBrowse}>
-          Browse Albums
+          Browse Demos
         </button>
       </div>
+
     </div>
   );
 }
