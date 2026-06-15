@@ -42,7 +42,7 @@ export default function App() {
               </div>
 
               <div className="section-label">
-                Latest — Dusk &amp; Timber
+                Latest — Bear Demos
                 <div className="section-divider" />
               </div>
 
