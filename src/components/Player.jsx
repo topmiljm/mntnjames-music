@@ -2,7 +2,7 @@ export default function Player({ track, isPlaying, progress, currentTime, onTogg
   if (!track) {
     return (
       <div className="player">
-        <span className="player__empty">Select a track to play</span>
+        <span className="player__empty">Select a demo to play</span>
       </div>
     );
   }

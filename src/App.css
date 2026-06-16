@@ -127,6 +127,7 @@ button {
   object-fit: cover;
   object-position: center bottom;
   margin: 0 auto;
+  border-radius: 50px;
 }
 
 @media (min-width: 768px) {
