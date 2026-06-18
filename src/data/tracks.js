@@ -29,6 +29,20 @@ export const albums = [
     color: '#3b5e3a',
     coverArt: '/images/moose demos artwork-2.png'
   },
+  {
+    id: 5,
+    title: 'Elk Demos',
+    year: 2021,
+    color: '#3b5e3a',
+    coverArt: '/images/elk demos artwork-2.png'
+  },
+  {
+    id: 5,
+    title: 'Eagle Demos',
+    year: 2027,
+    color: '#3b5e3a',
+    coverArt: '/images/eagle demos artwork-1.png'
+  },
 ];
 
 export const tracks = [
