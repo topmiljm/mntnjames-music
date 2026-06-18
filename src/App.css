@@ -75,11 +75,19 @@ button {
   z-index: 100;
 }
 
-.navbar-logo {
+.navbar-link-home {
   font-size: 16px;
   font-weight: 400;
-  color: var(--text-light);
   letter-spacing: 0.05em;
+  color: var(--text-faint);
+}
+
+.navbar-link-home:hover {
+  color: var(--text-faint);
+}
+
+.navbar-link-home.active {
+  color: var(--text-light);
 }
 
 .navbar-links {
@@ -151,9 +159,9 @@ button {
 }
 
 .hero-title-img {
-height: 3.5rem;
-background-color: white;
-border-radius: 20px 20px 5px 5px;
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 20px 20px 5px 5px;
 }
 
 .hero-subtitle {
