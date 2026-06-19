@@ -1,27 +1,29 @@
-export default function Navbar({ activePage, onNavigate }) {
+import { NavLink } from 'react-router-dom';
+
+const navItems = [
+  { label: 'Demos', to: '/demos' },
+  { label: 'About', to: '/about' },
+];
+
+export default function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-link-home">
-        {['Home'].map((page) => (
-          <button
-            key={page}
-            className={`navbar-link-home${activePage === page ? ' active' : ''}`}
-            onClick={() => onNavigate(page)}
-          >
-            MNTN James
-          </button>))}
-      </div>
+      <NavLink to="/" className="navbar-logo">MNTN James</NavLink>
       <div className="navbar-links">
-        {['About', 'Demos'].map((page) => (
-          <button
-            key={page}
-            className={`navbar-link${activePage === page ? ' active' : ''}`}
-            onClick={() => onNavigate(page)}
+        {navItems.map((item) => (
+          <NavLink
+            key={item.to}
+            to={item.to}
+            end={item.to === '/'}
+            className={({ isActive }) =>
+              `navbar-link${isActive ? ' active' : ''}`
+            }
           >
-            {page}
-          </button>
+            {item.label}
+          </NavLink>
         ))}
       </div>
     </nav>
   );
 }
+

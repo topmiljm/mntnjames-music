@@ -3,6 +3,7 @@ const CLOUD = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
 export const albums = [
   {
     id: 1,
+    slug: "bear-demos",
     title: 'Bear Demos',
     year: 2025,
     color: '#7c4e2a',
@@ -10,6 +11,7 @@ export const albums = [
   },
   {
     id: 2,
+    slug: "wolf-demos",
     title: 'Wolf Demos',
     year: 2024,
     color: '#3b5e3a',
@@ -17,6 +19,7 @@ export const albums = [
   },
   {
     id: 3,
+    slug: "ram-demos",
     title: 'Ram Demos',
     year: 2023,
     color: '#3b5e3a',
@@ -24,6 +27,7 @@ export const albums = [
   },
   {
     id: 4,
+    slug: "moose-demos",
     title: 'Moose Demos',
     year: 2022,
     color: '#3b5e3a',
@@ -31,6 +35,7 @@ export const albums = [
   },
   {
     id: 5,
+    slug: "elk-demos",
     title: 'Elk Demos',
     year: 2021,
     color: '#3b5e3a',
@@ -38,6 +43,7 @@ export const albums = [
   },
   {
     id: 5,
+    slug: "elk-demos",
     title: 'Eagle Demos',
     year: 2027,
     color: '#3b5e3a',

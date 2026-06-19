@@ -1,129 +1,36 @@
-import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import HeroHeader from './components/HeroHeader';
-import AlbumCard from './components/AlbumCard';
-import TrackRow from './components/TrackRow';
 import Player from './components/Player';
 import { usePlayer } from './hooks/usePlayer';
-import { albums, tracks } from './data/tracks';
+import HomePage from './pages/HomePage';
+import DemosPage from './pages/DemosPage';
+import AlbumPage from './pages/AlbumPage';
+import AboutPage from './pages/AboutPage';
 
 export default function App() {
-  const [page, setPage] = useState('Home');
-  const { currentTrack, isPlaying, progress, currentTime, toggle, seek } = usePlayer();
-
-  const tracksByAlbum = (albumTitle) =>
-    tracks.filter((t) => t.album === albumTitle);
+  const player = usePlayer();
 
   return (
     <div className="app">
-      <Navbar activePage={page} onNavigate={setPage} />
+      <Navbar />
 
       <main className="main">
-        {page === 'Home' && (
-          <>
-            <HeroHeader onBrowse={() => setPage('Demos')} />
-
-            <div className="page-content">
-              <div className="section-label">
-                Demos
-                <div className="section-divider" />
-              </div>
-
-              <div className="album-grid">
-                {albums.map((album) => (
-                  <AlbumCard
-                    key={album.id}
-                    album={album}
-                    trackCount={tracksByAlbum(album.title).length}
-                    onClick={() => setPage('Demos')}
-                  />
-                ))}
-              </div>
-
-              <div className="section-label">
-                Latest — Bear Demos
-                <div className="section-divider" />
-              </div>
-
-              <div className="track-list">
-                {tracksByAlbum('Dusk & Timber').map((track, i) => (
-                  <TrackRow
-                    key={track.id}
-                    track={track}
-                    index={i}
-                    isActive={currentTrack?.id === track.id}
-                    isPlaying={isPlaying && currentTrack?.id === track.id}
-                    onToggle={toggle}
-                  />
-                ))}
-              </div>
-            </div>
-          </>
-        )}
-
-        {page === 'Demos' && (
-          <div className="page-content">
-            <div className="section-label">
-              All Demos
-              <div className="section-divider" />
-            </div>
-
-            <div className="album-grid">
-              {albums.map((album) => (
-                <AlbumCard
-                  key={album.id}
-                  album={album}
-                  trackCount={tracksByAlbum(album.title).length}
-                  onClick={() => {}}
-                />
-              ))}
-            </div>
-
-            {albums.map((album) => (
-              <div key={album.id} className="album-section">
-                <div className="section-label">
-                  {album.title} · {album.year}
-                  <div className="section-divider" />
-                </div>
-                <div className="track-list">
-                  {tracksByAlbum(album.title).map((track, i) => (
-                    <TrackRow
-                      key={track.id}
-                      track={track}
-                      index={i}
-                      isActive={currentTrack?.id === track.id}
-                      isPlaying={isPlaying && currentTrack?.id === track.id}
-                      onToggle={toggle}
-                    />
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {page === 'About' && (
-          <div className="page-content--narrow">
-            <div className="section-label">
-              About
-              <div className="section-divider" />
-            </div>
-            <p className="about-text">
-              Original music by James. Recorded in the mountains, written by the fire.
-              {' '}Replace this with your own bio and story.
-            </p>
-          </div>
-        )}
+        <Routes>
+          <Route path="/" element={<HomePage player={player} />} />
+          <Route path="/demos" element={<DemosPage player={player} />} />
+          <Route path="/demos/:slug" element={<AlbumPage player={player} />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
       </main>
 
       <Player
-        track={currentTrack}
-        isPlaying={isPlaying}
-        progress={progress}
-        currentTime={currentTime}
-        onToggle={toggle}
-        onSeek={seek}
+        track={player.currentTrack}
+        isPlaying={player.isPlaying}
+        progress={player.progress}
+        currentTime={player.currentTime}
+        onToggle={player.toggle}
+        onSeek={player.seek}
       />
     </div>
   );
