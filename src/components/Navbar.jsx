@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="navbar-img-container">
           <img
             className="navbar-title-img"
-            src="/images/MNTN-James-title -1.png"
+            src="/images/MNTN-James-title-2.png"
           >
           </img>
         </div>
