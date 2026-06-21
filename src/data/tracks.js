@@ -83,7 +83,7 @@ export const tracks = [
     durationSecs: 164,
     color: '#4a3565',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624053/03.Hope_You_Had_Your_Fun_gtseff.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624053/03.Hope_You_Had_Your_Fun_gtseff.wav`,
   },
   {
     id: 4,
@@ -94,7 +94,7 @@ export const tracks = [
     durationSecs: 207,
     color: '#5e3a2a',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624108/04.Liked_and_Subscribed_1_qac31j.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624108/04.Liked_and_Subscribed_1_qac31j.wav`,
   },
   {
     id: 5,
@@ -105,7 +105,7 @@ export const tracks = [
     durationSecs: 204,
     color: '#2a4a5e',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624095/05.A_Bad_Guru_1_f0h4vl.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624095/05.A_Bad_Guru_1_f0h4vl.wav`,
   },
   {
     id: 6,
@@ -116,7 +116,7 @@ export const tracks = [
     durationSecs: 178,
     color: '#7c4e2a',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624064/06.Dare_I_Be_2_moyg20.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624064/06.Dare_I_Be_2_moyg20.wav`,
   },
   {
     id: 7,
@@ -127,7 +127,7 @@ export const tracks = [
     durationSecs: 169,
     color: '#3b5e3a',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624062/07.She_Wants_To_Be_Famous2_hbqjww.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624062/07.She_Wants_To_Be_Famous2_hbqjww.wav`,
   },
   {
     id: 8,
@@ -138,7 +138,7 @@ export const tracks = [
     durationSecs: 224,
     color: '#4a3565',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624116/08.Under_New_Moon_Light_2_rldswc.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624116/08.Under_New_Moon_Light_2_rldswc.wav`,
   },
   {
     id: 9,
@@ -149,7 +149,7 @@ export const tracks = [
     durationSecs: 180,
     color: '#5e3a2a',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624096/09.The_Material_Things_2_wek7v2.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624096/09.The_Material_Things_2_wek7v2.wav`,
   },
   {
     id: 10,
@@ -160,7 +160,7 @@ export const tracks = [
     durationSecs: 185,
     color: '#2a4a5e',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624102/10.Roller_Coastering_flkg20.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624102/10.Roller_Coastering_flkg20.wav`,
   },
   {
     id: 11,
@@ -171,7 +171,7 @@ export const tracks = [
     durationSecs: 173,
     color: '#4a3565',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624114/11.Did_Me_So_Damn_Wrong_jenniz.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624114/11.Did_Me_So_Damn_Wrong_jenniz.wav`,
   },
   {
     id: 12,
@@ -182,7 +182,7 @@ export const tracks = [
     durationSecs: 199,
     color: '#5e3a2a',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624124/12.Never_Die_Turn_the_Page_My_Friend_2_tpdamj.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624124/12.Never_Die_Turn_the_Page_My_Friend_2_tpdamj.wav`,
   },
   {
     id: 13,
@@ -193,7 +193,7 @@ export const tracks = [
     durationSecs: 193,
     color: '#2a4a5e',
     coverArt: '/images/bear demos artwork-1.png',
-    src: `https://res.cloudinary.com/dlmh9gyjy/video/upload/q_auto/f_auto/v1781624105/13._Deluxe_Escalante_Escobar_ewmpuc.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624105/13._Deluxe_Escalante_Escobar_ewmpuc.wav`,
   },
 
   {
