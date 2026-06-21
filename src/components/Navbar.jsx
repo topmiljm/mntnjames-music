@@ -9,7 +9,15 @@ const navItems = [
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <NavLink to="/" className="navbar-logo">MNTN James</NavLink>
+      <NavLink to="/" className="navbar-logo">
+        <div className="navbar-img-container">
+          <img
+            className="navbar-title-img"
+            src="/images/MNTN-James-title -1.png"
+          >
+          </img>
+        </div>
+      </NavLink>
       <div className="navbar-links">
         {navItems.map((item) => (
           <NavLink

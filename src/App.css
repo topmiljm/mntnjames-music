@@ -70,11 +70,23 @@ button {
   align-items: center;
   justify-content: space-between;
   padding: 0 1.5rem;
-  height: 52px;
+  height: 60px;
   position: sticky;
   top: 0;
   z-index: 100;
   border-bottom: 1px solid var(--bg-cream);
+}
+
+.navbar-title-img {
+  margin-top: 10px;
+  /* max-width: 180px; */
+  height: 2.6rem;
+  border-radius: 2px;
+
+}
+
+.navbar-img-container:hover {
+  box-shadow: 1px 1px 5px var(--bg-card);
 }
 
 .navbar-logo {
@@ -120,7 +132,7 @@ button {
 
 @media (min-width: 768px) {
   .navbar-link {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
