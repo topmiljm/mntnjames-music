@@ -411,6 +411,11 @@ button {
 /* =====================
    Track Row
    ===================== */
+.trackrow-container {
+  background-color: var(--text-light);
+  border-radius: 20px;
+}
+
 .track-row {
   display: flex;
   align-items: center;
@@ -421,12 +426,14 @@ button {
   transition: background 0.12s;
 }
 
-.track-row:hover {
+.track-row:hover:not(.active) {
   background: var(--bg-card);
+  border-radius: 20px;
 }
 
 .track-row.active {
   background: #e2d5c0;
+  border: solid 1px var(--bg-dark);
 }
 
 .track-row__num {

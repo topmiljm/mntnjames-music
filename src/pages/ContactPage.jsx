@@ -46,7 +46,7 @@ export default function ContactPage() {
 
                 <div className="section-divider" />
                 <p className="shows-text">
-                    <i>'loren ipsum'</i>
+                    <i>'lorem ipsum'</i>
                 </p>
             </div>
         </div>
