@@ -9,7 +9,7 @@ export default function TrackRow({ track, index, isPlaying, isActive, onToggle }
       onClick={() => onToggle(track)}
     >
       <div className={`track-row__num${isActive ? ' track-row__num--playing' : ''}`}>
-        {isActive && isPlaying ? '▶' : isActive ? '❙❙' : index + 1}
+        {isActive && isPlaying ? '❙❙' : isActive ? '▶' : index + 1}
       </div>
 
       <div className="track-row__thumb" style={{ background: track.color }}>
