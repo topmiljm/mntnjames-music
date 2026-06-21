@@ -41,14 +41,14 @@ export const albums = [
     color: '#3b5e3a',
     coverArt: '/images/elk demos artwork-2.png'
   },
-  {
-    id: 5,
-    slug: "elk-demos",
-    title: 'Eagle Demos',
-    year: 2027,
-    color: '#3b5e3a',
-    coverArt: '/images/eagle demos artwork-1.png'
-  },
+  // {
+  //   id: 5,
+  //   slug: "eagle-demos",
+  //   title: 'Eagle Demos',
+  //   year: 2027,
+  //   color: '#3b5e3a',
+  //   coverArt: '/images/eagle demos artwork-1.png'
+  // },
 ];
 
 export const tracks = [
@@ -61,7 +61,6 @@ export const tracks = [
     durationSecs: 169,
     color: '#7c4e2a',
     src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781623529/01.Watch_Me_Walk_Out_1_deptg2.wav`,
-    // src: '/demos/bear demos/01.Watch Me Walk Out_1.wav',
   },
   {
     id: 2,
@@ -71,8 +70,7 @@ export const tracks = [
     duration: '3:05',
     durationSecs: 185,
     color: '#3b5e3a',
-    // src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624067/02.Everything_Has_Gone_And_Changed2_szhhel.wav`,
-    src: '/demos/bear demos/02.Everything Has Gone And Changed2.wav',
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624067/02.Everything_Has_Gone_And_Changed2_szhhel.wav`,
   },
   {
     id: 3,
@@ -106,14 +104,13 @@ export const tracks = [
   },
 
   {
-    id: 20,
+    id: 40,
     title: 'Let The Night Erupt',
     album: 'Ram Demos',
     albumId: 3,
     duration: '2:57',
     durationSecs: 177,
     color: 'orange ',
-    // src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624829/1.let_the_night_erupt_jw9kjy.wav`,
-    src: '/demos/ram demos/1.let the night erupt.wav',
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624829/1.let_the_night_erupt_jw9kjy.wav`,
   },
 ];

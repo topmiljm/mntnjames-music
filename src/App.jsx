@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import DemosPage from './pages/DemosPage';
 import AlbumPage from './pages/AlbumPage';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 export default function App() {
   const player = usePlayer();
@@ -21,6 +22,8 @@ export default function App() {
           <Route path="/demos" element={<DemosPage player={player} />} />
           <Route path="/demos/:slug" element={<AlbumPage player={player} />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+
         </Routes>
       </main>
 

@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <>
       <div className="about-page-img-wrapper">
-        <img className="about-page-img" src="/images/about-header-1.jpg" alt="" />
+        <img className="about-page-img" src="/images/about-header-2.jpg" alt="" />
       </div>
 
       <div className="page-content--narrow">

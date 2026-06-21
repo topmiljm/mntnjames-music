@@ -12,7 +12,7 @@ export default function HeroHeader({ onBrowse }) {
             src="/images/mntn-peak.jpg">
           </img>
         </h1>
-        <p className="hero-subtitle">Original Demos &nbsp;·&nbsp; Stream &amp; Listen</p>
+        <p className="hero-subtitle">Songwriter &nbsp;·&nbsp; Los Angeles, CA</p>
         <button className="hero-btn" onClick={onBrowse}>
           Browse Demos
         </button>

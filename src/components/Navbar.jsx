@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 const navItems = [
   { label: 'Demos', to: '/demos' },
   { label: 'About', to: '/about' },
+  { label: 'Contact', to: '/contact' },
 ];
 
 export default function Navbar() {
