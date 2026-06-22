@@ -7,36 +7,36 @@ export default function ContactPage() {
 
             <div className="contact-page">
                 <div className="contact-container">
-                    <h1 className="contact-title">CONTACT</h1>
+                    <h1 className="contact-title">Contact</h1>
                     <form className="contact-form">
                         <div className="form-section">
-
+                            <p>* required field</p>
                             <div className="name-row">
                                 <div className="field-group">
-                                    <span>First Name (required)</span>
+                                    <span>First Name *</span>
                                     <input type="text" maxLength={50} required />
                                 </div>
 
                                 <div className="field-group">
-                                    <span>Last Name (required)</span>
+                                    <span>Last Name *</span>
                                     <input type="text" maxLength={50} required />
                                 </div>
                             </div>
                         </div>
 
                         <div className="field-group">
-                            <span>Email (required)</span>
+                            <span>Email *</span>
                             <input type="email" maxLength={50} required />
                         </div>
 
                         <div className="field-group">
-                            <span>Subject (required)</span>
+                            <span>Subject *</span>
                             <input type="text" maxLength={125} required />
                         </div>
 
                         <div className="field-group">
-                            <span>Message (required)</span>
-                            <textarea rows="6" required />
+                            <span>Message *</span>
+                            <textarea rows="6" maxLength={500} required />
                         </div>
 
                         <button type="submit" className="contact-submit">
