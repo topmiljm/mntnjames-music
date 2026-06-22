@@ -7,7 +7,7 @@ export default function AboutPage() {
 
       <div className="page-content--narrow">
         <div className="section-label">
-          About
+          About &nbsp;·&nbsp; <strong>MNTN James</strong>
           <div className="section-divider" />
         </div>
 

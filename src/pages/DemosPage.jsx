@@ -9,22 +9,28 @@ export default function DemosPage() {
     tracks.filter((t) => t.album === albumTitle).length;
 
   return (
-    <div className="page-content">
-      <div className="section-label">
-        All Demos
-        <div className="section-divider" />
+    <>
+      <div className="about-page-img-wrapper">
+        <img className="about-page-img" src="/images/about-header-2.jpg" alt="" />
       </div>
 
-      <div className="album-grid">
-        {albums.map((album) => (
-          <AlbumCard
-            key={album.id}
-            album={album}
-            trackCount={trackCount(album.title)}
-            onClick={() => navigate(`/demos/${album.slug}`)}
-          />
-        ))}
+      <div className="page-content">
+        <div className="section-label">
+          All Demos &nbsp;·&nbsp; <strong>MNTN James</strong>
+          <div className="section-divider" />
+        </div>
+
+        <div className="album-grid">
+          {albums.map((album) => (
+            <AlbumCard
+              key={album.id}
+              album={album}
+              trackCount={trackCount(album.title)}
+              onClick={() => navigate(`/demos/${album.slug}`)}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
