@@ -15,6 +15,8 @@ export default function DemosPage() {
       </div>
 
       <div className="page-content">
+        <h1 className="demo-page-h1">Album Demos</h1>
+
         <div className="section-label">
           All Demos &nbsp;·&nbsp; <strong>MNTN James</strong>
           <div className="section-divider" />

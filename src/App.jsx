@@ -8,6 +8,7 @@ import DemosPage from './pages/DemosPage';
 import AlbumPage from './pages/AlbumPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   const player = usePlayer();
@@ -17,6 +18,7 @@ export default function App() {
       <Navbar />
 
       <main className="main">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage player={player} />} />
           <Route path="/demos" element={<DemosPage player={player} />} />
