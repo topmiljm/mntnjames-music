@@ -1,7 +1,7 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export default function TrackRow({ track, index, isPlaying, isActive, onToggle }) {
-  const [liked, setLiked] = useState(false);
+  // const [liked, setLiked] = useState(false);
 
   return (
     <div className="trackrow-container">
@@ -28,13 +28,13 @@ export default function TrackRow({ track, index, isPlaying, isActive, onToggle }
           <div className="track-row__album">{track.album}</div>
         </div>
 
-        <button
+        {/* <button
           className={`track-row__like${liked ? ' liked' : ''}`}
           onClick={(e) => { e.stopPropagation(); setLiked((l) => !l); }}
           aria-label={liked ? 'Unlike' : 'Like'}
         >
           {liked ? '♥' : '♡'}
-        </button>
+        </button> */}
 
         <div className="track-row__duration">{track.duration}</div>
       </div>

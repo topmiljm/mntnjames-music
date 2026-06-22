@@ -65,11 +65,11 @@ button {
    Navbar
    ===================== */
 .navbar {
-  background: var(--bg-dark);
+  background: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 0 1.2rem;
   height: 60px;
   position: sticky;
   top: 0;
@@ -155,7 +155,8 @@ button {
   object-position: center bottom;
   margin: 0 auto;
   border-radius: 50px;
-  border: 1px solid black;
+  border: 1px solid var(--bg-dark-mid);
+  box-shadow: 2px 2px 20px 2px var(--bg-card);
 }
 
 @media (min-width: 768px) {
@@ -200,7 +201,7 @@ button {
   margin-top: 1.25rem;
   padding: 9px 28px;
   border: 1px solid var(--bg-dark-mid);
-  color: var(--text-faint);
+  color: var(--text-primary);
   font-size: 12px;
   border-radius: 4px;
   letter-spacing: 0.08em;
@@ -208,6 +209,7 @@ button {
   background: none;
   text-transform: uppercase;
   transition: background 0.15s;
+  box-shadow: -1px 1px 1px var(--bg-dark);
 }
 
 .hero-btn:hover {
@@ -520,7 +522,7 @@ button {
    Player Bar
    ===================== */
 .player {
-  background: var(--bg-dark);
+  background: black;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -707,6 +709,7 @@ button {
   background: var(--border);
   color: var(--text-muted);
   padding: 20px 20px;
+  border-top: 1px solid black;
 }
 
 .contact-container {
@@ -716,34 +719,12 @@ button {
 
 .contact-title {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
   letter-spacing: 2px;
   color: var(--text-muted);
 }
-
-/* .contact-page-img-wrapper {
-  background-image: linear-gradient(5deg,
-      var(--bg-cream),
-      var(--bg-dark-mid),
-      var(--bg-card-hover),
-      green);
-  margin-bottom: 30px;
-}
-
-.contact-page-img {
-  width: 20%;
-  display: flex;
-  margin: 0.25px auto 10px;
-  border-radius: 20px;
-}
-
-@media (min-width: 768px) {
-  .contact-page-img {
-    width: 10%;
-  }
-} */
 
 .contact-form {
   display: flex;

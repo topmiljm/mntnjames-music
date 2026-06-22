@@ -2,7 +2,7 @@ export default function HeroHeader({ onBrowse }) {
   return (
     <div className="hero">
       <img
-        src="/images/header-2.jpg"
+        src="/images/header-1.jpg"
         alt="Mountain wilderness illustration"
         className="hero-img"
       />
