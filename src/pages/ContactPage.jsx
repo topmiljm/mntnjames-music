@@ -24,6 +24,13 @@ export default function ContactPage() {
     const data = await response.json();
 
     if (data.success) {
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        subject: '',
+        message: '',
+      });
       alert('Message sent!');
     } else {
       console.error(data);
