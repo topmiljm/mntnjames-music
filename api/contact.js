@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     await resend.emails.send({
       from: 'onboarding@resend.dev',
       to: process.env.CONTACT_EMAIL,
-      replyTo: email,
+      reply_to: email,
       subject: `[Website Contact] ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
