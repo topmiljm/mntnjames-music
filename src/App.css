@@ -65,7 +65,7 @@ button {
    Navbar
    ===================== */
 .navbar {
-  background: var(--bg-dark);
+  background: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -434,7 +434,7 @@ button {
    Player Bar
    ===================== */
 .player {
-  background: var(--bg-dark);
+  background: #1a1a1a;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -721,7 +721,7 @@ button {
 
 .contact-page {
   min-height: 100vh;
-  background: var(--border);
+  background: var(--bg-card-hover);
   color: var(--text-muted);
   padding: 20px 20px;
   border-top: 10px double black;
@@ -783,7 +783,7 @@ button {
 
 .field-group input:hover,
 .field-group textarea:hover {
-  background-color: var(--text-muted);
+  background-color: var(--border);
 }
 
 .field-group textarea {
