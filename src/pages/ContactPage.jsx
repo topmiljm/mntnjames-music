@@ -25,6 +25,9 @@ export default function ContactPage() {
 
     if (data.success) {
       alert('Message sent!');
+    } else {
+      console.error(data);
+      alert('Failed to send message');
     }
   }
   return (
