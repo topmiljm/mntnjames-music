@@ -635,7 +635,7 @@ button {
   overflow: hidden;
   border: 0.5px solid var(--border);
   cursor: pointer;
-  transition: background 0.15s;
+  transition: all 0.2s ease;
 }
 
 .album-card:hover {

@@ -15,7 +15,7 @@ export const albums = [
     title: 'Wolf Demos',
     year: 2025,
     color: '#3b5e3a',
-    coverArt: '/images/wolf demos artwork-1.png'
+    coverArt: '/images/wolf demos artwork-2.png'
   },
   {
     id: 3,
