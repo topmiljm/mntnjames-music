@@ -1,8 +1,16 @@
 const CLOUD = import.meta.env.VITE_CLOUDINARY_CLOUD_NAME;
 
 export const albums = [
+  // {
+  //   id: 1,
+  //   slug: "eagle-demos",
+  //   title: 'Eagle Demos',
+  //   year: 2027,
+  //   color: '#3b5e3a',
+  //   coverArt: '/images/eagle demos artwork-1.png'
+  // },
   {
-    id: 1,
+    id: 2,
     slug: "bear-demos",
     title: 'Bear Demos',
     year: 2026,
@@ -10,7 +18,7 @@ export const albums = [
     coverArt: '/images/bear demos artwork-1.png'
   },
   {
-    id: 2,
+    id: 3,
     slug: "wolf-demos",
     title: 'Wolf Demos',
     year: 2025,
@@ -18,7 +26,7 @@ export const albums = [
     coverArt: '/images/wolf demos artwork-1.png'
   },
   {
-    id: 3,
+    id: 4,
     slug: "ram-demos",
     title: 'Ram Demos',
     year: 2024,
@@ -26,7 +34,7 @@ export const albums = [
     coverArt: '/images/ram demos artwork-1.png'
   },
   {
-    id: 4,
+    id: 5,
     slug: "moose-demos",
     title: 'Moose Demos',
     year: 2023,
@@ -34,21 +42,22 @@ export const albums = [
     coverArt: '/images/moose demos artwork-1.png'
   },
   {
-    id: 5,
+    id: 6,
+    slug: "moon-uke-demos",
+    title: 'Moon Uke Demos',
+    year: 2022,
+    color: '#3b5e3a',
+    coverArt: '/images/moon demos artwork-1.png'
+  },
+  {
+    id: 7,
     slug: "elk-demos",
     title: 'Elk Demos',
     year: 2021,
     color: '#3b5e3a',
     coverArt: '/images/elk demos artwork-1.png'
   },
-  // {
-  //   id: 5,
-  //   slug: "eagle-demos",
-  //   title: 'Eagle Demos',
-  //   year: 2027,
-  //   color: '#3b5e3a',
-  //   coverArt: '/images/eagle demos artwork-1.png'
-  // },
+  
 ];
 
 export const tracks = [
