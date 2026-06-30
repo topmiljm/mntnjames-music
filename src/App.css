@@ -458,6 +458,15 @@ button {
   gap: 10px;
   width: 200px;
   flex-shrink: 0;
+  text-decoration: none;
+}
+
+.player__now-playing:hover {
+  box-shadow: inset 1px 1px 15px 2px var(--text-faint);
+}
+
+.player__now-playing:active {
+  box-shadow: inset 1px 1px 15px 2px var(--text-light);
 }
 
 .player__thumb {

@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom';
+import { albums } from '../data/tracks';
+
 export default function Player({ track, isPlaying, progress, currentTime, onToggle, onSeek }) {
   if (!track) {
     return (
@@ -19,9 +22,11 @@ export default function Player({ track, isPlaying, progress, currentTime, onTogg
     return `${m}:${s}`;
   };
 
+  const currentAlbum = albums.find((a) => a.id === track.albumId);
+
   return (
     <div className="player">
-      <div className="player__now-playing">
+      <Link to={`/demos/${currentAlbum.slug}`} className="player__now-playing">
         <div className="player__thumb" style={{ background: track.color }}>
           {track.coverArt ? (
             <img src={track.coverArt} alt={track.title} />
@@ -33,7 +38,7 @@ export default function Player({ track, isPlaying, progress, currentTime, onTogg
           <div className="player__track-title">{track.title}</div>
           <div className="player__track-album">{track.album}</div>
         </div>
-      </div>
+      </Link>
 
       <div className="player__controls">
         <div className="player__btn-row">
