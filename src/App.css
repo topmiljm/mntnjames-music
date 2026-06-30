@@ -148,12 +148,12 @@ button {
 }
 
 .hero-img {
-  width: 100%;
+  width: 90%;
   display: block;
   max-height: 900px;
   object-fit: cover;
   object-position: center bottom;
-  margin: 0 auto;
+  margin: 10px auto 10px;
   border-radius: 50px;
   border: 1px solid var(--bg-dark-mid);
   box-shadow: 2px 2px 20px 2px var(--bg-card);
@@ -703,8 +703,18 @@ button {
   border: 1px solid var(--border);
 }
 
+.about-page-img-2 {
+  width: 90%;
+  display: flex;
+  margin: 20px auto 10px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+}
+
 @media (min-width: 768px) {
-  .about-page-img {
+
+  .about-page-img,
+  .about-page-img-2 {
     width: 40%;
   }
 }

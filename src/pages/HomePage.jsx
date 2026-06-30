@@ -19,7 +19,7 @@ export default function HomePage({ player }) {
 
       <div className="page-content">
         <div className="section-label">
-          Latest — {latestAlbum.title} &nbsp;·&nbsp; {latestAlbum.year}
+          Latest — <strong>{latestAlbum.title}</strong> &nbsp;·&nbsp; {latestAlbum.year}
           <div className="section-divider" />
         </div>
 
