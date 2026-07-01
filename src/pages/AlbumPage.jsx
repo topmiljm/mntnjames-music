@@ -4,7 +4,7 @@ import { albums, tracks } from '../data/tracks';
 
 export default function AlbumPage({ player }) {
   const { slug } = useParams();
-  const { currentTrack, isPlaying, toggle } = player;
+  const { currentTrack, playTrack } = player;
 
   const album = albums.find((a) => a.slug === slug);
 
@@ -26,31 +26,41 @@ export default function AlbumPage({ player }) {
 
   return (
     <div className="page-content">
-      <div className="section-label">
-        {album.title} · {album.year}
-        <div className="section-divider" />
-      </div>
+      {/* <div className="album-page__info"> */}
+        <div className="section-label">
+          {album.title} · {album.year}
+          <div className="section-divider" />
+        </div>
+        {/* <p className="album-page__count">{albumTracks.length} tracks</p> */}
+      {/* </div> */}
 
       <div className="latest-release">
-        {album.coverArt && (
-          <img className="latest-release__art" src={album.coverArt} alt={album.title} />
-        )}
+        {/* <div className="album-page__header"> */}
+          {album.coverArt && (
+            <img
+              src={album.coverArt}
+              alt={album.title}
+              className="latest-release__art"
+            />
+          )}
+
+        {/* </div> */}
 
         <div className="latest-release__tracks">
-          < div className="track-list">
+          <div className="track-list">
             {albumTracks.map((track, i) => (
               <TrackRow
                 key={track.id}
                 track={track}
                 index={i}
                 isActive={currentTrack?.id === track.id}
-                isPlaying={isPlaying && currentTrack?.id === track.id}
-                onToggle={toggle}
+                isPlaying={false}
+                onToggle={playTrack}
               />
             ))}
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
 }

@@ -5,13 +5,10 @@ import { albums, tracks } from '../data/tracks';
 
 export default function HomePage({ player }) {
   const navigate = useNavigate();
-  const { currentTrack, isPlaying, toggle } = player;
-
-  const tracksByAlbum = (albumTitle) =>
-    tracks.filter((t) => t.album === albumTitle);
+  const { currentTrack, playTrack } = player;
 
   const latestAlbum = albums[0];
-  const latestTracks = tracksByAlbum(latestAlbum.title);
+  const latestTracks = tracks.filter((t) => t.album === latestAlbum.title);
 
   return (
     <>
@@ -19,7 +16,7 @@ export default function HomePage({ player }) {
 
       <div className="page-content">
         <div className="section-label">
-          Latest — <strong>{latestAlbum.title}</strong> &nbsp;·&nbsp; {latestAlbum.year}
+          Latest — {latestAlbum.title}
           <div className="section-divider" />
         </div>
 
@@ -45,8 +42,8 @@ export default function HomePage({ player }) {
                   track={track}
                   index={i}
                   isActive={currentTrack?.id === track.id}
-                  isPlaying={isPlaying && currentTrack?.id === track.id}
-                  onToggle={toggle}
+                  isPlaying={false}
+                  onToggle={playTrack}
                 />
               ))}
             </div>

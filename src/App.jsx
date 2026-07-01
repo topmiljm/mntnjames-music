@@ -10,6 +10,7 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import ScrollToTop from './components/ScrollToTop';
 
+
 export default function App() {
   const player = usePlayer();
 
@@ -19,9 +20,10 @@ export default function App() {
 
       <main className="main">
         <ScrollToTop />
+
         <Routes>
           <Route path="/" element={<HomePage player={player} />} />
-          <Route path="/demos" element={<DemosPage player={player} />} />
+          <Route path="/demos" element={<DemosPage />} />
           <Route path="/demos/:slug" element={<AlbumPage player={player} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
@@ -30,12 +32,11 @@ export default function App() {
       </main>
 
       <Player
-        track={player.currentTrack}
-        isPlaying={player.isPlaying}
-        progress={player.progress}
-        currentTime={player.currentTime}
-        onToggle={player.toggle}
-        onSeek={player.seek}
+        currentTrack={player.currentTrack}
+        currentIndex={player.currentIndex}
+        albumTracks={player.albumTracks}
+        restartTrack={player.restartTrack}
+        goToIndex={player.goToIndex}
       />
     </div>
   );
