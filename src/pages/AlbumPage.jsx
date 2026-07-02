@@ -26,25 +26,25 @@ export default function AlbumPage({ player }) {
 
   return (
     <div className="page-content">
-      {/* <div className="album-page__info"> */}
-        <div className="section-label">
-          {album.title} · {album.year}
-          <div className="section-divider" />
-        </div>
-        {/* <p className="album-page__count">{albumTracks.length} tracks</p> */}
-      {/* </div> */}
+      <div className="section-label">
+        {album.title} · {album.year}
+        <div className="section-divider" />
+      </div>
 
       <div className="latest-release">
-        {/* <div className="album-page__header"> */}
-          {album.coverArt && (
-            <img
-              src={album.coverArt}
-              alt={album.title}
-              className="latest-release__art"
-            />
-          )}
+        {album.coverArt && (
+          <img
+            src={album.coverArt}
+            alt={album.title}
+            className="latest-release__art"
+          />
+        )}
 
-        {/* </div> */}
+        {/* <div className="section-label">
+          <div className="section-divider" />
+          {albumTracks.length} tracks · {album.duration}
+        </div> */}
+
 
         <div className="latest-release__tracks">
           <div className="track-list">
