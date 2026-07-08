@@ -170,7 +170,7 @@ button {
   padding: 1.75rem 2rem;
   text-align: center;
   border-top: 20px double var(--bg-card-hover);
-  box-shadow: inset 2px 2px 50px 20px var(--bg-dark-mid);
+  box-shadow: inset 2px 2px 40px 10px var(--bg-dark-mid);
   border-bottom: 5px dotted var(--bg-card-hover);
 }
 
