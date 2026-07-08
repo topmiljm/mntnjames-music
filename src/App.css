@@ -166,19 +166,19 @@ button {
 }
 
 .hero-overlay {
-  background: var(--bg-card-hover);
+  background: #1a1a1a;
   padding: 1.75rem 2rem;
   text-align: center;
-  border-top: 20px double var(--text-primary);
-  box-shadow: inset 2px 2px 12px 2px var(--bg-dark-mid);
-  border-bottom: 5px dotted var(--bg-dark);
+  border-top: 20px double var(--bg-card-hover);
+  box-shadow: inset 2px 2px 40px 2px var(--bg-dark-mid);
+  border-bottom: 5px dotted var(--bg-card-hover);
 }
 
 .hero-title {
   font-family: Georgia, serif;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
   font-weight: 400;
-  color: var(--text-primary);
+  color: var(--text-light);
   letter-spacing: 0.08em;
 }
 
@@ -186,6 +186,12 @@ button {
   height: 3.5rem;
   background-color: white;
   border-radius: 20px 20px 5px 5px;
+}
+
+.hero-title-img-2 {
+  height: 3.8rem;
+  /* background-color: white; */
+  /* border-radius: 20px 20px 5px 5px; */
 }
 
 .hero-subtitle {
@@ -210,8 +216,6 @@ button {
   text-transform: uppercase;
   transition: background 0.15s;
   box-shadow: -1px 1px 1px var(--bg-dark);
-  /* box-shadow: inset -1px -1px 1px 1px darkgreen; */
-
 }
 
 .hero-btn:hover {
