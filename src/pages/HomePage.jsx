@@ -16,23 +16,31 @@ export default function HomePage({ player }) {
 
       <div className="page-content">
         <div className="section-label">
-          Latest — {latestAlbum.title}
+          Latest · <strong>{latestAlbum.title}</strong>
           <div className="section-divider" />
         </div>
 
         <div className="latest-release">
-          <Link to={`/demos/${latestAlbum.slug}`} className="latest-release__art">
-            {latestAlbum.coverArt ? (
-              <img src={latestAlbum.coverArt} alt={latestAlbum.title} />
-            ) : (
-              <div
-                className="latest-release__placeholder"
-                style={{ background: latestAlbum.color }}
-              >
-                <span>♪</span>
-              </div>
-            )}
-          </Link>
+          <div>
+            <Link to={`/demos/${latestAlbum.slug}`} className="latest-release__art">
+              {latestAlbum.coverArt ? (
+                <img src={latestAlbum.coverArt} alt={latestAlbum.title} />
+              ) : (
+                <div
+                  className="latest-release__placeholder"
+                  style={{ background: latestAlbum.color }}
+                >
+                  <span>♪</span>
+                </div>
+              )}
+            </Link>
+
+            <div className="section-label-2">
+              <div className="section-divider-2" />
+              {latestAlbum.length} tracks · {latestAlbum.duration}
+            </div>
+
+          </div>
 
           <div className="latest-release__tracks">
             <div className="track-list">
