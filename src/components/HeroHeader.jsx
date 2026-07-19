@@ -7,15 +7,16 @@ export default function HeroHeader({ onBrowse }) {
         className="hero-img"
       />
       <div className="hero-overlay">
-        <h1 className="hero-title">MNTN James
-          {/* <img className="hero-title-img-2"
+        <div className="hero-head">
+          <h1 className="hero-title">MNTN James
+            {/* <img className="hero-title-img-2"
             src="/images/MNTN-James-title-3.png">
           </img> */}
+          </h1>
           <img className="hero-title-img"
             src="/images/mntn-peak2.jpg">
           </img>
-          
-        </h1>
+        </div>
         <p className="hero-subtitle">Songwriter/Musician &nbsp;·&nbsp; Los Angeles, CA</p>
         <button className="hero-btn" onClick={onBrowse}>
           Browse Demos
