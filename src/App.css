@@ -475,8 +475,15 @@ button {
 
 .player__empty {
   font-size: 13px;
-  color: #6b5038;
+  color: var(--text-light);
   font-style: italic;
+}
+
+.player__empty-img {
+  width: 10rem;
+  position: absolute;
+  right: 15px;
+  border-radius: 30px;
 }
 
 .player__now-playing {

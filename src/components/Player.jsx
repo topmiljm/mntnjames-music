@@ -94,6 +94,7 @@ export default function Player({ currentTrack, currentIndex, albumTracks, restar
     return (
       <div className="player">
         <span className="player__empty">Select a demo to play</span>
+        <img className="player__empty-img" src="/images/player-img-2.jpg"></img>
       </div>
     );
   }
