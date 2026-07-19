@@ -10,6 +10,17 @@ export default function HomePage({ player }) {
   const latestAlbum = albums[0];
   const latestTracks = tracks.filter((t) => t.album === latestAlbum.title);
 
+  const trackCount = latestTracks.length;
+
+  const totalSeconds = latestTracks.reduce(
+    (sum, track) => sum + track.durationSecs,
+    0
+  );
+
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  const totalDuration = `${minutes}: ${seconds.toString().padStart(2, "0")}`;
+
   return (
     <>
       <HeroHeader onBrowse={() => navigate('/demos')} />
@@ -37,7 +48,7 @@ export default function HomePage({ player }) {
 
             <div className="section-label-2">
               <div className="section-divider-2" />
-              {latestAlbum.length} tracks · {latestAlbum.duration}
+              {trackCount} tracks · {totalDuration}
             </div>
 
           </div>

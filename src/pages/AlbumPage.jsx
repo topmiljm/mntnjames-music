@@ -8,6 +8,7 @@ export default function AlbumPage({ player }) {
 
   const album = albums.find((a) => a.slug === slug);
 
+
   if (!album) {
     return (
       <div className="page-content--narrow">
@@ -23,6 +24,15 @@ export default function AlbumPage({ player }) {
   }
 
   const albumTracks = tracks.filter((t) => t.album === album.title);
+
+  const totalSeconds = albumTracks.reduce(
+    (sum, track) => sum + track.durationSecs,
+    0
+  );
+
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  const totalDuration = `${minutes}: ${seconds.toString().padStart(2, "0")}`;
 
   return (
     <div className="page-content">
@@ -43,7 +53,7 @@ export default function AlbumPage({ player }) {
 
           <div className="section-label-2">
             <div className="section-divider-2" />
-            {albumTracks.length} tracks · {album.duration}
+            {albumTracks.length} tracks · {totalDuration}
           </div>
         </div>
 
