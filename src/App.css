@@ -169,7 +169,7 @@ button {
   background: #1a1a1a;
   padding: 1.75rem 2rem;
   text-align: center;
-  border-top: 20px double var(--bg-card-hover);
+  border-top: 10px double var(--accent);
   box-shadow: inset 2px 2px 40px 10px var(--bg-dark-mid);
   border-bottom: 5px dotted var(--bg-card-hover);
 }
@@ -207,7 +207,7 @@ button {
   margin-top: 1.25rem;
   padding: 9px 28px;
   border: 1px solid green;
-  color: green;
+  color: lightgreen;
   font-size: 12px;
   border-radius: 4px;
   letter-spacing: 0.08em;
@@ -215,11 +215,13 @@ button {
   background: none;
   text-transform: uppercase;
   transition: background 0.15s;
-  box-shadow: -1px 1px 1px var(--bg-dark);
+  box-shadow: inset 1px 1px 10px var(--bg-dark-mid);
 }
 
 .hero-btn:hover {
   box-shadow: inset 1px 1px 7px var(--border);
+  transform: scaleY(1.07);
+  color: var(--text-light);
 }
 
 /* =====================
