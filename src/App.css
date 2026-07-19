@@ -504,6 +504,7 @@ button {
 
 .player__now-playing:hover {
   box-shadow: inset 1px 1px 15px 2px var(--text-faint);
+  border-radius: 15px;
 }
 
 .player__now-playing:active {
