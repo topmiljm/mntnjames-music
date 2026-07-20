@@ -169,7 +169,7 @@ button {
   background: #1a1a1a;
   padding: 1.75rem 2rem;
   text-align: center;
-  border-top: 10px double var(--accent);
+  border-top: 10px double var(--text-muted);
   box-shadow: inset 2px 2px 40px 10px var(--bg-dark-mid);
   border-bottom: 5px dotted var(--bg-card-hover);
 }
