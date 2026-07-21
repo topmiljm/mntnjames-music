@@ -155,7 +155,7 @@ button {
   object-position: center bottom;
   margin: 10px auto 10px;
   border-radius: 50px;
-  border: 1px solid var(--bg-dark-mid);
+  border: 1px solid var(--accent);
   box-shadow: 2px 2px 20px 2px var(--bg-card);
 }
 
