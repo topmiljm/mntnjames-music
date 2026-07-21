@@ -184,7 +184,7 @@ export const tracks = [
   },
   {
     id: 12,
-    title: 'Never Die (Turn the Page My Friend)',
+    title: 'Never Die (Turn The Page My Friend)',
     album: 'Bear Demos',
     albumId: 2,
     duration: '3:19',
@@ -273,7 +273,7 @@ export const tracks = [
   },
   {
     id: 27,
-    title: 'All Bark and All Bite',
+    title: 'All Bark And All Bite',
     album: 'Wolf Demos',
     albumId: 3,
     duration: '2:50',
@@ -628,7 +628,7 @@ export const tracks = [
   },
   {
     id: 83,
-    title: 'Swimming Against The  Flow',
+    title: 'Swimming Against The Flow',
     album: 'Moon Uke Demos',
     albumId: 6,
     duration: '2:55',
@@ -739,7 +739,7 @@ export const tracks = [
 
   {
     id: 101,
-    title: 'Break The Speed of Sound',
+    title: 'Break The Speed Of Sound',
     album: 'Elk Demos',
     albumId: 7,
     duration: '3:04',
