@@ -36,6 +36,9 @@ export default function AlbumPage({ player }) {
 
   return (
     <div className="page-content">
+      <div className="album-page-img-wrapper">
+        <img className="album-page-img" src="/images/player-img-2.jpg" alt="" />
+      </div>
       <div className="section-label">
         <strong>{album.title}</strong> · {album.year}
         <div className="section-divider" />
