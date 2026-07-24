@@ -775,6 +775,7 @@ button {
   border: 0.5px solid var(--border);
   cursor: pointer;
   transition: all 0.2s ease;
+  margin-bottom: 20px;
 }
 
 .album-card:hover {
@@ -788,6 +789,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 5px auto 0;
 }
 
 .album-card__art img {
@@ -981,7 +983,7 @@ button {
       rgb(54, 52, 52));
   border-top: 5px dotted var(--border);
   border-bottom: 5px dotted var(--border);
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   box-shadow: inset 2px 2px 15px 10px var(--bg-cream);
 }
 
