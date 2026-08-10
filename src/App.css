@@ -77,6 +77,12 @@ button {
   border-bottom: 2px solid #1a1a1a;
 }
 
+@media (min-width: 768px) {
+  .navbar {
+    padding: 0 12rem;
+  }
+}
+
 .navbar-title-img {
   margin-top: 20px;
   height: 2.8rem;
@@ -487,6 +493,12 @@ button {
   z-index: 100;
 }
 
+@media (min-width: 768px) {
+  .player {
+    padding: 0 12rem;
+  }
+}
+
 .player__empty {
   font-size: 13px;
   color: var(--text-light);
@@ -498,6 +510,13 @@ button {
   position: absolute;
   right: 15px;
   border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .player__empty-img {
+    right: 175px;
+    width: 13rem;
+  }
 }
 
 .player__now-playing {
