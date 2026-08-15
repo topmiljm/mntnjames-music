@@ -539,14 +539,14 @@ export const tracks = [
   },
   {
     id: 67,
-    title: "I Won't Shake Their Hands",
+    title: "Greener Over Here",
     album: 'Moose Demos',
     albumId: 5,
-    duration: '3:05',
-    durationSecs: 185,
+    duration: '4:06',
+    durationSecs: 246,
     color: 'orange ',
     coverArt: '/images/moose demos artwork-1.png',
-    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624495/7.i_wont_shake_their_hands_sma6zg.wav`,
+    src: `https://res.cloudinary.com/${CLOUD}}/video/upload/q_auto/f_auto/v1786825488/8.greener_over_here_xgxqgi.wav`,
   },
   {
     id: 68,
