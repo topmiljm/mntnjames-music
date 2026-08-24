@@ -68,6 +68,10 @@ export default function HomePage({ player }) {
             </div>
           </div>
         </div>
+        <p className="section-label-2">
+          <div className="section-divider-2" />
+          © {new Date().getFullYear()} MNTN James
+        </p>
       </div>
     </>
   );
