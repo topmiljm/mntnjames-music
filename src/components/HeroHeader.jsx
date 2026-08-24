@@ -18,7 +18,7 @@ export default function HeroHeader({ onBrowse }) {
           </img>
         </div>
         <p className="hero-subtitle">Songwriter/Musician &nbsp;·&nbsp; Los Angeles, CA</p>
-        <button className="hero-btn" onClick={onBrowse}>
+        <button className="hero-btn" title="View All Album Demos" onClick={onBrowse}>
           Browse Demos
         </button>
       </div>

@@ -28,8 +28,7 @@ export default function DemosPage() {
               key={album.id}
               album={album}
               trackCount={trackCount(album.title)}
-              onClick={() => navigate(`/demos/${album.slug}`)}
-            />
+              onClick={() => navigate(`/demos/${album.slug}`)} />
           ))}
         </div>
       </div>
