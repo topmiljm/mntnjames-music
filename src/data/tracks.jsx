@@ -15,7 +15,8 @@ export const albums = [
     title: 'Bear Demos',
     year: 2026,
     color: '#7c4e2a',
-    coverArt: '/images/bear demos artwork-1.png'
+    coverArt: '/images/bear demos artwork-1.png',
+    spotifyUrl: 'https://open.spotify.com/album/5yOSgFZFQAyOh2brZrPwL2'
   },
   {
     id: 3,
@@ -23,7 +24,8 @@ export const albums = [
     title: 'Wolf Demos',
     year: 2025,
     color: '#3b5e3a',
-    coverArt: '/images/wolf demos artwork-1.png'
+    coverArt: '/images/wolf demos artwork-1.png',
+    spotifyUrl: 'https://open.spotify.com/album/5K1yoKH6tgK9atet3xm5wz'
   },
   {
     id: 4,
@@ -31,7 +33,8 @@ export const albums = [
     title: 'Ram Demos',
     year: 2024,
     color: '#3b5e3a',
-    coverArt: '/images/ram demos artwork-1.png'
+    coverArt: '/images/ram demos artwork-1.png',
+    spotifyUrl: 'https://open.spotify.com/album/43aJunfLX4tfDyGsjokAKv'
   },
   {
     id: 5,
@@ -39,7 +42,8 @@ export const albums = [
     title: 'Moose Demos',
     year: 2023,
     color: '#3b5e3a',
-    coverArt: '/images/moose demos artwork-1.png'
+    coverArt: '/images/moose demos artwork-1.png',
+    spotifyUrl: 'https://open.spotify.com/album/5VaMj6xJSBHItzrgUvv8u7'
   },
   {
     id: 6,
