@@ -51,8 +51,9 @@ export default function AlbumPage({ player }) {
               src={album.coverArt}
               alt={album.title}
               className="latest-release__art"
-              title={`${album.title} Spotify →`}
-              onClick={() => window.open(album.spotifyUrl, "_blank")}
+              title={album.spotifyUrl ? `${album.title} Spotify →` : album.title}
+              onClick={album.spotifyUrl ? () => window.open(album.spotifyUrl, "_blank") : undefined}
+              style={album.spotifyUrl ? { cursor: "pointer" } : undefined}
             />
           )}
 

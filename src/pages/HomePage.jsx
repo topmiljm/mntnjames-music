@@ -35,7 +35,7 @@ export default function HomePage({ player }) {
           <div>
             <Link to={`/demos/${latestAlbum.slug}`} className="latest-release__art">
               {latestAlbum.coverArt ? (
-                <img title={latestAlbum.title} src={latestAlbum.coverArt} alt={latestAlbum.title} />
+                <img title={`${latestAlbum.title} →`} src={latestAlbum.coverArt} alt={latestAlbum.title} />
               ) : (
                 <div
                   className="latest-release__placeholder"
