@@ -458,7 +458,7 @@ export const tracks = [
     album: 'Ram Demos',
     albumId: 4,
     duration: '2:15',
-    durationSecs: 177,
+    durationSecs: 135,
     color: 'orange ',
     coverArt: '/images/ram demos artwork-1.png',
     src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1781624818/11.your_face_your_face_grlapk.wav`,
