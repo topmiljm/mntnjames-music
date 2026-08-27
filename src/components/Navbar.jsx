@@ -14,7 +14,7 @@ export default function Navbar() {
           <img
             className="navbar-title-img"
             src="/images/MNTN-James-title-2.png"
-            title="Go to Home Page"
+            title="Home Page"
           >
           </img>
         </div>
@@ -28,7 +28,7 @@ export default function Navbar() {
             className={({ isActive }) =>
               `navbar-link${isActive ? ' active' : ''}`
             }
-            title={`Go to ${item.label} Page`}
+            title={`${item.label} Page`}
           >
             {item.label}
           </NavLink>
