@@ -750,7 +750,7 @@ export const tracks = [
     durationSecs: 184,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945160/01.break_the_speed_of_sound_qjfb2l.wav`,
   },
   {
     id: 102,
@@ -761,7 +761,7 @@ export const tracks = [
     durationSecs: 163,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945176/02.turn_around_please_yvbfny.wav`,
   },
   {
     id: 103,
@@ -772,7 +772,7 @@ export const tracks = [
     durationSecs: 188,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945195/03.youve_entwined_me_ub4qmt.wav`,
   },
   {
     id: 104,
@@ -783,7 +783,7 @@ export const tracks = [
     durationSecs: 138,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945115/04.jellyfish_stings_lmc8i0.wav`,
   },
   {
     id: 105,
@@ -794,7 +794,7 @@ export const tracks = [
     durationSecs: 161,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945192/05.seeing_stars_wdmywc.wav`,
   },
   {
     id: 106,
@@ -805,7 +805,7 @@ export const tracks = [
     durationSecs: 172,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945191/06.take_your_bow_and_arrow_owye8k.wav`,
   },
   {
     id: 107,
@@ -816,7 +816,7 @@ export const tracks = [
     durationSecs: 205,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945226/07.count_the_waning_moons_td9xy9.wav`,
   },
   {
     id: 108,
@@ -827,7 +827,7 @@ export const tracks = [
     durationSecs: 201,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945231/08.scoundrel_ed7zpa.wav`,
   },
   {
     id: 109,
@@ -838,7 +838,7 @@ export const tracks = [
     durationSecs: 198,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945236/09.director_aldeah.wav`,
   },
   {
     id: 110,
@@ -849,7 +849,7 @@ export const tracks = [
     durationSecs: 161,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945207/10.happy_place_a5wzkm.wav`,
   },
   {
     id: 111,
@@ -860,7 +860,7 @@ export const tracks = [
     durationSecs: 191,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945239/11.i_escape_from_la_yaq5c9.wav`,
   },
   {
     id: 112,
@@ -871,7 +871,7 @@ export const tracks = [
     durationSecs: 188,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945235/12.on_the_occasion_mlhnvh.wav`,
   },
   {
     id: 113,
@@ -882,7 +882,7 @@ export const tracks = [
     durationSecs: 158,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945217/20.when_coronas_gone_bonus_tlrqwo.wav`,
   },
   {
     id: 114,
@@ -893,7 +893,7 @@ export const tracks = [
     durationSecs: 220,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945252/21.better_friend_bonus_kq9ddb.wav`,
   },
   {
     id: 115,
@@ -904,7 +904,7 @@ export const tracks = [
     durationSecs: 174,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945240/22.overdue_bonus_cejbpu.wav`,
   },
   {
     id: 116,
@@ -915,6 +915,6 @@ export const tracks = [
     durationSecs: 136,
     color: 'orange ',
     coverArt: '/images/elk demos artwork-1.png',
-    src: ``,
+    src: `https://res.cloudinary.com/${CLOUD}/video/upload/q_auto/f_auto/v1787945209/23.shy_bonus_ypyidm.wav`,
   },
 ];
