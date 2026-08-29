@@ -798,7 +798,7 @@ export const tracks = [
   },
   {
     id: 106,
-    title: 'Take Your Bow (And Arrow)',
+    title: 'Take Your Bow (And Bolt)',
     album: 'Elk Demos',
     albumId: 7,
     duration: '2:52',
