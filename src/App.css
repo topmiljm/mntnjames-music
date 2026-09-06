@@ -870,6 +870,14 @@ button {
   border: 1px solid var(--border);
 }
 
+.about-page-img-container {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  height: 18rem;
+  padding-top: 10px;
+}
+
 .about-page-img-2 {
   width: 65%;
   display: flex;
