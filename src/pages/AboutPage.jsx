@@ -18,7 +18,11 @@ export default function AboutPage() {
           irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <img className="about-page-img-2" src="/images/about-img-3.jpg"></img>
+        <img
+          src="/images/about-img-1.jpg"
+          className="about-page-img-2"
+        >
+        </img>
         <div className="section-label">
           <div className="section-divider" />
           <img className="page-bottom-img" src="/images/mntn-peak-removebg.png"></img>
