@@ -39,7 +39,7 @@ export default function AboutPage() {
     const timeout = setTimeout(() => {
       setStart((start) => start + 1);
       setEnd((end) => end + 1);
-    }, 3000);
+    }, 5000);
 
     if (end === slides.length + 1) {
       setStart(0);
