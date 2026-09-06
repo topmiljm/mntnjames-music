@@ -14,12 +14,12 @@ export default function AboutPage() {
     {
       src: "/images/about-img-3.jpg",
     },
-    {
-      src: "/images/about-img-4.jpg",
-    },
-    {
-      src: "/images/about-img-5.jpg",
-    },
+    // {
+    //   src: "/images/about-img-4.jpg",
+    // },
+    // {
+    //   src: "/images/about-img-5.jpg",
+    // },
   ]
 
   // const first = () => {
