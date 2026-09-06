@@ -69,8 +69,10 @@ export default function HomePage({ player }) {
           </div>
         </div>
         <p className="section-label-2">
-          <div className="section-divider-2" />
+          <div className="section-divider" />
+          <img className="page-bottom-img" src="/images/mntn-peak-removebg.png"></img>
           © {new Date().getFullYear()} · MNTN James
+          <div className="section-divider-2" />
         </p>
       </div>
     </>
