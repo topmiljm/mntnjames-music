@@ -503,6 +503,7 @@ button {
   font-size: 13px;
   color: var(--text-light);
   font-style: italic;
+  /* display: flex; */
 }
 
 .player__empty-img {
@@ -749,6 +750,12 @@ button {
   letter-spacing: 0.08em;
 }
 
+.page-bottom-img {
+  width: 2.5rem;
+  display: flex;
+  margin: 0 auto;
+}
+
 
 /* =====================
    Album Grid
@@ -757,7 +764,7 @@ button {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 20px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 @media (max-width: 380px) {

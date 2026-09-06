@@ -112,10 +112,14 @@ export default function ContactPage() {
             </button>
           </form>
 
-          <div className="section-divider" />
-          <p className="shows-text">
+          <div className="section-label">
+            <div className="section-divider" />
+            <img className="page-bottom-img" src="/images/mntn-peak-removebg.png"></img>
+            <div className="section-divider" />
+          </div>
+          {/* <p className="shows-text">
             <i>'lorem ipsum'</i>
-          </p>
+          </p> */}
         </div>
       </div>
     </>

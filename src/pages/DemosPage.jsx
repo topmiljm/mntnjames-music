@@ -31,6 +31,11 @@ export default function DemosPage() {
               onClick={() => navigate(`/demos/${album.slug}`)} />
           ))}
         </div>
+        <div className="section-label">
+          <div className="section-divider" />
+          <img className="page-bottom-img" src="/images/mntn-peak-removebg.png"></img>
+          <div className="section-divider" />
+        </div>
       </div>
     </>
   );
